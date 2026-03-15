@@ -1,4 +1,4 @@
-package net.Koraxe.ModExperimentation;
+package net.Koraxe.tutorialmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

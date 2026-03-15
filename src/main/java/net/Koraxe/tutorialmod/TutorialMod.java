@@ -1,10 +1,9 @@
-package net.Koraxe.ModExperimentation;
+package net.Koraxe.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.Koraxe.ModExperimentation.item.Moditems;
+import net.Koraxe.tutorialmod.item.Moditems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -25,10 +24,8 @@ public class TutorialMod {
     public static final String MOD_ID = "tutorialmod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "tutorialmod" namespace
 
-    public TutorialMod()
-    {
+    public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
